@@ -186,56 +186,60 @@ M
 
 
     
-<form action="#" method="post" onsubmit="alert('✨Contato enviado✨')" ; autocomplete="on">
-    </br>
-    <label for="name"> Digite seu nome:</label>
-    <input type="name" name="name" placeholder="Nome" required />
-    </br>
+<form action="#" method="post" onsubmit="alert('✨Contato enviado✨')" autocomplete="on">
+    <br>
+    <label for="name">Digite seu nome:</label>
+    <input type="text" name="name" placeholder="Nome" required />
+    <br>
     <label for="email">Digite seu email:</label>
     <input type="email" name="email" placeholder="Email" required />
-    </br>
+    <br>
     <label for="telefone">Digite seu telefone:</label>
-    <input type="tel" name="telefone" placeholder="Telefone" required="([0-9]{2}) [0-9]{4}-[0-9]{4}" />
-    </br>
-    <h3><strong>Digite sua área de interesse ou mensagem abaixo:</strong> </h3>
+    <input type="tel" name="telefone" placeholder="Telefone" pattern="([0-9]{2}) [0-9]{4}-[0-9]{4}" required />
+    <br>
+    <h3><strong>Digite sua área de interesse ou mensagem abaixo:</strong></h3>
     <input type="text" name="interesse" placeholder="Digite sua área de interesse ou mensagem" required>
-    <button type="submit">Enviar</button>
-    <h3><strong> Deseja nos ajudar?(pix ou doações)</strong></h3>
-    <input type="radio" name="resposta" value="sim">
-    <label>Sim</label>
-    </br>
-    <input type="radio" name="resposta" value="não">
-    <label>Não</label>
+    <br>
+    <h3><strong>Deseja nos ajudar?(pix ou doações)</strong></h3>
+    <input type="radio" name="resposta" value="sim" id="sim">
+    <label for="sim">Sim</label>
+    <br>
+    <input type="radio" name="resposta" value="não" id="nao">
+    <label for="nao">Não</label>
+    <br>
     <h3><strong>Deixe uma avaliação para nossa ONG e deixe uma nota</strong></h3>
-    <input type="text" name="Avaliação" placeholder="Escreva sua avaliação">
+    <input type="text" name="avaliacao" placeholder="Escreva sua avaliação">
     <br>
     <h3><strong>Nos dê sua nota (de 1 a 10)!</strong></h3>
 
-<div>
-  <input type="radio" name="nota" value="1" id="n1">
-  <label for="n1">1</label>
-  <input type="radio" name="nota" value="2" id="n2">
-  <label for="n2">2</label>
-  <input type="radio" name="nota" value="3" id="n3">
-  <label for="n3">3</label>
-  <input type="radio" name="nota" value="4" id="n4">
-  <label for="n4">4</label>
-  <input type="radio" name="nota" value="5" id="n5">
-  <label for="n5">5</label>
-  <input type="radio" name="nota" value="6" id="n6">
-  <label for="n6">6</label>
-  <input type="radio" name="nota" value="7" id="n7">
-  <label for="n7">7</label>
-  <input type="radio" name="nota" value="8" id="n8">
-  <label for="n8">8</label>
-  <input type="radio" name="nota" value="9" id="n9">
-  <label for="n9">9</label>
-  <input type="radio" name="nota" value="10" id="n10">
-  <label for="n10">10</label>
-</div>
+    <div>
+      <input type="radio" name="nota" value="1" id="n1">
+      <label for="n1">1</label>
+      <input type="radio" name="nota" value="2" id="n2">
+      <label for="n2">2</label>
+      <input type="radio" name="nota" value="3" id="n3">
+      <label for="n3">3</label>
+      <input type="radio" name="nota" value="4" id="n4">
+      <label for="n4">4</label>
+      <input type="radio" name="nota" value="5" id="n5">
+      <label for="n5">5</label>
+      <input type="radio" name="nota" value="6" id="n6">
+      <label for="n6">6</label>
+      <input type="radio" name="nota" value="7" id="n7">
+      <label for="n7">7</label>
+      <input type="radio" name="nota" value="8" id="n8">
+      <label for="n8">8</label>
+      <input type="radio" name="nota" value="9" id="n9">
+      <label for="n9">9</label>
+      <input type="radio" name="nota" value="10" id="n10">
+      <label for="n10">10</label>
+    </div>
+    <br>
+    <button type="submit">Enviar</button>
 </form>
 <footer>
   <p><strong>Criadores:</strong> Samara Santos, Emanuelle Maria, Leticya Souza, Jorge Salles e Ana Caroline Ferreira.</p>
   <p><em>Aviso:</em> Este site é fictício e criado apenas para fins educacionais.</p>
 </footer>
+
 
